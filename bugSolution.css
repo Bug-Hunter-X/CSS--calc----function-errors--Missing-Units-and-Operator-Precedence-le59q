@@ -1,0 +1,15 @@
+/* Correct usage of calc() */
+.correct {
+  width: calc(100% - 10px);
+  margin: calc((100vw - 800px) / 2);
+}
+
+/* Incorrect usage of calc() - Missing units */
+.incorrect-units {
+  width: calc(100% - 10); /* Missing px unit */
+}
+
+/* Incorrect usage of calc() - Incorrect Operator Precedence */
+.incorrect-precedence {
+  margin: calc(100vw - 800px / 2); /* Incorrect order */
+}
